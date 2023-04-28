@@ -1,14 +1,15 @@
-import { trpc } from "~/utils/trpc";
+import { trpc } from "~/lib/trpc";
+import { Button } from "~/components/ui/button";
 
 export default function Index() {
-	const hello = trpc.example.getAll.useQuery()
+	// const hello = trpc.example.getAll.useQuery()
 
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-center">
-			<pre className='border p-4 border-gray-300'>
-				{JSON.stringify(hello.data, null, 4)}
-			</pre>
-		</main>
+		<div className="flex min-h-screen flex-col items-center justify-center">
+			<Button>
+				Button
+			</Button>
+		</div>
 	);
 }
 
