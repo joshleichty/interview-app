@@ -28,7 +28,7 @@ export const useTableStore = create<State>()(
 	() => ({
 		data: [],
 		columns: [
-			{ key: 'text', type: 'string', title: 'Column 1' },
+			{ key: 'firstName', type: 'string', title: 'First Name' },
 		],
 	})
 )
