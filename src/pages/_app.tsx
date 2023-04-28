@@ -3,8 +3,9 @@ import { trpc } from "~/lib/trpc"
 import { Inter } from "next/font/google"
 import { cn } from "~/lib/utils"
 import "~/styles/globals.css"
+import 'react-datasheet-grid/dist/style.css'
 
-const inter = Inter({
+export const inter = Inter({
 	subsets: ['latin'],
 	variable: '--font-inter'
 })

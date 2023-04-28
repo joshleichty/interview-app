@@ -1,8 +1,8 @@
 import { createTRPCRouter } from "~/server/trpc";
-import { exampleRouter } from "~/server/routers/example";
+import { aiRouter } from "./ai";
 
 export const appRouter = createTRPCRouter({
-	example: exampleRouter,
+	ai: aiRouter
 });
 
 export type AppRouter = typeof appRouter;
